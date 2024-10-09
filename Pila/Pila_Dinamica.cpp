@@ -10,7 +10,7 @@ Pila:: ~Pila(){
 
 void Pila:: alta(Dato datos){
 
-    Nodos* nuevo_nodo = new Nodos;
+    Nodo* nuevo_nodo = new Nodo;
     
     nuevo_nodo->cambiar_dato(datos);
     
@@ -21,7 +21,7 @@ void Pila:: alta(Dato datos){
 }
 
 void Pila:: baja(){
-    Nodos* direccion_actual = tope->direccion_siguiente();
+    Nodo* direccion_actual = tope->direccion_siguiente();
     delete tope;
     tope = direccion_actual;
 }

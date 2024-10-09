@@ -1,13 +1,13 @@
 #ifndef PILA_DINAMICA
 #define PILA_DINAMICA
-#include "Nodos.hpp"
+#include "Nodo.hpp"
 
 typedef int Dato;
 
 class Pila {
 
     private:
-        Nodos* tope;
+        Nodo* tope;
     public:
 
         Pila();
